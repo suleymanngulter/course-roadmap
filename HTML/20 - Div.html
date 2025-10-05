@@ -1,0 +1,60 @@
+1. <div> Nedir?
+    Ne İşe Yarar?
+    Bölümler oluşturmak için kullanılır.
+    Bir anlamı yoktur ama CSS ile şekillendirilerek düzenleme yapar.
+    Web sayfalarında bloklar oluşturur.
+    📌 Özet: Sayfadaki öğeleri gruplamak ve düzenlemek için kullanılır.
+    
+    2. Temel Kullanımı
+
+    <div>
+      <h2>Başlık</h2>
+      <p>Bu bir paragraf.</p>
+    </div>
+    Sonuç:
+    <div> içindeki tüm öğeler aynı blok içinde olur.
+    3. CSS ile Kullanımı
+
+    <style>
+      .kutu {
+        width: 300px;
+        padding: 20px;
+        background-color: lightblue;
+        border: 2px solid blue;
+      }
+    </style>
+    
+    <div class="kutu">
+      <h3>Başlık</h3>
+      <p>Bu bir kutudur.</p>
+    </div>
+    Sonuç: Mavi kenarlıklı, arka planı açık mavi olan bir kutu oluşur.
+    4. Birden Fazla <div> Kullanımı
+
+    <div style="background-color: red; padding: 20px;">
+      <h2>Kırmızı Alan</h2>
+    </div>
+    
+    <div style="background-color: blue; padding: 20px; color: white;">
+      <h2>Mavi Alan</h2>
+    </div>
+    Sonuç:
+    Üstte kırmızı, altta mavi iki ayrı blok oluşur.
+    5. İç İçe <div> Kullanımı
+ 
+    <div style="background-color: gray; padding: 20px;">
+      <h2>Üst Alan</h2>
+      
+      <div style="background-color: white; padding: 10px;">
+        <p>İçindeki küçük alan.</p>
+      </div>
+    </div>
+    Sonuç:
+    Büyük gri kutunun içinde küçük beyaz kutu olur.
+
+    Özellik	Ne İşe Yarar?
+    <div>	Sayfadaki öğeleri gruplar.
+    CSS ile Kullanılır	Arka plan, kenarlık, padding eklenebilir.
+    İç İçe Kullanılabilir	Bir <div> içine başka <div> eklenebilir.
+        
+    📌 Kullanım Amacı: Sayfayı düzenli bölümlere ayırmak ve CSS ile tasarım yapmak. 🚀

@@ -1,0 +1,70 @@
+Konu 2: Bootstrap Grid Sistemi (Izgara Yapısı)
+📌 Grid Sistemi Nedir?
+Bootstrap'in grid sistemi, web sayfalarını düzenli ve mobil uyumlu bir şekilde tasarlamamıza yardımcı olur.
+12 sütundan oluşan bir yapı kullanır. Bu sayede, farklı ekran boyutlarına uygun tasarımlar yapabiliriz.
+
+🎯 Grid Sisteminin Temel Kuralları
+Tüm içerik bir "container" içinde olmalıdır.
+Satır (row) kullanılır ve içinde sütunlar (col) bulunur.
+Sütunlar (col) toplamda 12 birimi geçmemelidir.
+Mobil uyumlu tasarımlar için "col-sm", "col-md", "col-lg", "col-xl" gibi sınıflar kullanılır.
+
+📌 Örnek HTML Kodu: Grid Sistemi Kullanımı
+Bu kod, Bootstrap'in grid sistemini kullanarak farklı sütun yapılarını gösterir.
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Sistemi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h2 class="text-center text-primary">Bootstrap Grid Sistemi</h2>
+
+        <!-- 12 Sütunluk Tam Genişlik -->
+        <div class="row">
+            <div class="col-12 bg-light border p-3 text-center">Bu, 12 sütun genişliğinde bir satırdır.</div>
+        </div>
+
+        <!-- 6 + 6 Sütun -->
+        <div class="row mt-3">
+            <div class="col-md-6 bg-warning border p-3 text-center">Bu, 6 sütun kaplar.</div>
+            <div class="col-md-6 bg-success border p-3 text-center">Bu da 6 sütun kaplar.</div>
+        </div>
+
+        <!-- 4 + 4 + 4 Sütun -->
+        <div class="row mt-3">
+            <div class="col-md-4 bg-info border p-3 text-center">4 sütun</div>
+            <div class="col-md-4 bg-danger border p-3 text-center">4 sütun</div>
+            <div class="col-md-4 bg-secondary border p-3 text-center">4 sütun</div>
+        </div>
+
+        <!-- 3 + 3 + 3 + 3 Sütun -->
+        <div class="row mt-3">
+            <div class="col-md-3 bg-primary border p-3 text-center">3 sütun</div>
+            <div class="col-md-3 bg-dark text-white border p-3 text-center">3 sütun</div>
+            <div class="col-md-3 bg-light border p-3 text-center">3 sütun</div>
+            <div class="col-md-3 bg-warning border p-3 text-center">3 sütun</div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+🔍 Kod Açıklamaları
+
+✅ .container → Sayfanın ortalanmasını sağlar.
+✅ .row → Satırları oluşturur.
+✅ .col-md-6 gibi sütun sınıfları → 12’lik sistemde kaç birim kaplayacağını belirler.
+✅ Mobil uyumluluk sağlandı → Küçük ekranlarda sütunlar otomatik olarak alt alta sıralanır.
+✅ Renk ve border eklendi → Görsel olarak daha iyi anlamak için arkaplan renkleri ve kenarlıklar eklendi.

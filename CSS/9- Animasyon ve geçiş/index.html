@@ -1,0 +1,58 @@
+<!-- 9. Konu: CSS Animasyonları ve Geçişler -->
+<!-- Bu dosya, CSS animasyonlarını ve geçiş efektlerini en basit haliyle açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animasyonları ve Geçişler</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Geçiş (Transition) Örneği */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out; /* Renk ve büyüklük değişimi yumuşatılır */
+        }
+        .box:hover {
+            background-color: lightcoral;
+            transform: scale(1.2); /* Üzerine gelindiğinde büyütülür */
+        }
+
+        /* Animasyon Örneği */
+        @keyframes hareket {
+            0% { transform: translateX(0px); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0px); }
+        }
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            animation: hareket 2s infinite; /* Sürekli hareket eden animasyon */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animasyonları ve Geçişler</h1>
+    
+    <h2>Geçiş (Transition) Nedir?</h2>
+    <p>Geçişler, bir öğenin belirli bir süre içinde renk, boyut veya pozisyon gibi özelliklerini yumuşakça değiştirmesini sağlar.</p>
+    <div class="box">Hover Yap</div>
+
+    <h2>Animasyon (Keyframes) Nedir?</h2>
+    <p>Animasyonlar, bir öğenin belirli hareketleri sürekli tekrar etmesini sağlar.</p>
+    <div class="animated-box">Hareket</div>
+</body>
+</html>

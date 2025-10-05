@@ -1,0 +1,59 @@
+<!-- 12. Konu: Box Sizing Border-Box -->
+<!-- Bu dosya, box-sizing: border-box özelliğini açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing: Border-Box</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        * {
+            box-sizing: border-box; /* Tüm öğelere border-box uygular */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Content-Box Örneği */
+        .content-box {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: lightcoral;
+            margin: 10px auto;
+            box-sizing: content-box;
+        }
+
+        /* Border-Box Örneği */
+        .border-box {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: lightblue;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Box Sizing: Border-Box</h1>
+        
+        <h2>Content-Box (Varsayılan)</h2>
+        <p>Bu kutunun genişliği, içeriğin genişliği ile belirlenir. Eklenen padding ve border genişliği artırır.</p>
+        <div class="content-box">Content-Box</div>
+
+        <h2>Border-Box</h2>
+        <p>Bu kutunun genişliği, padding ve border dahil edilerek hesaplanır. Toplam genişlik sabit kalır.</p>
+        <div class="border-box">Border-Box</div>
+    </div>
+</body>
+</html>

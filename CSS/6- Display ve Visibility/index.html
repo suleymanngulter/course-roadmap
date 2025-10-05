@@ -1,0 +1,82 @@
+<!-- 6. Konu: Display ve Visibility -->
+<!-- Bu dosya, CSS'in display ve visibility özelliklerini açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display ve Visibility</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Block Display */
+        .block {
+            display: block; /* Öğeyi tam genişlik kaplayan bir blok olarak görüntüler. */
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Inline Display */
+        .inline {
+            display: inline; /* Öğeyi sadece içerik kadar genişlik kaplayacak şekilde satır içi gösterir. */
+            background-color: lightblue;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        /* Inline-Block Display */
+        .inline-block {
+            display: inline-block; /* İçeriğin boyutlarını değiştirebileceğimiz, ancak satır içinde görüntülenen bir öğe oluşturur. */
+            background-color: lightcoral;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* None Display */
+        .none {
+            display: none; /* Öğeyi tamamen gizler ve sayfa düzeninde hiç yer kaplamamasını sağlar. */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Visibility Hidden */
+        .hidden {
+            visibility: hidden; /* Öğeyi görünmez yapar ama sayfa düzeninde yer kaplamaya devam eder. */
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display ve Visibility</h1>
+    
+    <h2>Block Display</h2>
+    <p>Bu öğe, tam genişliği kaplayan bir blok olarak görüntülenir.</p>
+    <div class="block">Bu bir block öğesidir.</div>
+
+    <h2>Inline Display</h2>
+    <p>Bu öğeler, yalnızca içerikleri kadar genişlik kaplar ve satır içinde gösterilir.</p>
+    <span class="inline">Bu bir inline öğesidir.</span>
+    <span class="inline">Bu da bir inline öğesidir.</span>
+
+    <h2>Inline-Block Display</h2>
+    <p>Bu öğeler, satır içi öğeler gibi davranır, ancak genişlik ve yükseklik ayarlanabilir.</p>
+    <div class="inline-block">Bu bir inline-block öğesidir.</div>
+    <div class="inline-block">Bu da bir inline-block öğesidir.</div>
+
+    <h2>None Display</h2>
+    <p>Aşağıdaki öğe görünmez olacak ve sayfa düzeninde hiç yer kaplamayacaktır.</p>
+    <div class="none">Bu bir none öğesidir.</div>
+
+    <h2>Visibility: Hidden</h2>
+    <p>Aşağıdaki öğe görünmez olacak ancak sayfa düzeninde boşluk bırakacaktır.</p>
+    <div class="hidden">Bu bir visibility hidden öğesidir.</div>
+  
+</body>
+</html>

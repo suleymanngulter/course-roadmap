@@ -1,0 +1,42 @@
+<!-- 1. Konu: CSS'e Giriş -->
+<!-- Bu dosya, HTML ile CSS'in nasıl bağlandığını gösteren temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS'e Giriş</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Bu, iç CSS (internal CSS) yöntemidir */
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS'e Giriş</h1>
+    
+    <h2>CSS Nedir?</h2>
+    <p>CSS, Cascading Style Sheets'in kısaltmasıdır ve HTML elementlerini biçimlendirmek için kullanılır.</p>
+
+    <h2>CSS Nasıl Eklenir?</h2>
+    <p>CSS üç farklı şekilde HTML'e eklenebilir:</p>
+    <ul>
+        <li><b>Inline CSS:</b> HTML etiketinin içine direkt olarak yazılır.</li>
+        <li><b>Internal CSS:</b> HTML dosyasının head bölümünde style etiketi içinde yazılır.</li>
+        <li><b>External CSS:</b> Ayrı bir CSS dosyası oluşturularak bağlanır.</li>
+    </ul>
+
+    <!-- Inline CSS Kullanımı Örneği -->
+    <p style="color: red; font-weight: bold;">Bu bir inline CSS örneğidir.</p>
+
+    <!-- External CSS Kullanımı Örneği (Bu stiller style.css içinde tanımlanacak) -->
+    <div class="external-css">Bu bir external CSS örneğidir.</div>
+</body>
+</html>

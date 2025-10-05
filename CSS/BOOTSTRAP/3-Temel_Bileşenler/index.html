@@ -1,0 +1,129 @@
+📌 Konu 3: Bootstrap Temel Bileşenleri
+Bu derste Bootstrap'in en sık kullanılan temel bileşenlerini öğreneceğiz. Bileşenler, web sayfalarımızı daha estetik ve işlevsel hale getiren hazır UI elemanlarıdır.
+
+🎯 Bootstrap Temel Bileşenleri
+Typography (Yazı stilleri)
+Tablolar (Tables)
+Görseller (Images)
+Butonlar (Buttons)
+Uyarılar (Alerts)
+Rozetler (Badges)
+
+📌 Örnek HTML Kodu: Bootstrap Temel Bileşenler
+Bu kod, yukarıdaki bileşenleri içeren örnek bir sayfa oluşturur.
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Temel Bileşenler</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h2 class="text-primary text-center">Bootstrap Temel Bileşenler</h2>
+
+        <!-- 1. Typography (Yazı Stilleri) -->
+        <h3 class="mt-4">Typography</h3>
+        <p class="lead">Bu, Bootstrap'in <strong>lead</strong> sınıfı ile vurgulanmış bir paragrafıdır.</p>
+        <p class="text-muted">Bu, <code>text-muted</code> sınıfı ile soluk gösterilen bir metindir.</p>
+
+        <!-- 2. Tablolar (Tables) -->
+        <h3 class="mt-4">Tablolar</h3>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>İsim</th>
+                    <th>Yaş</th>
+                    <th>Şehir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ahmet</td>
+                    <td>25</td>
+                    <td>İstanbul</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ayşe</td>
+                    <td>30</td>
+                    <td>Ankara</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mehmet</td>
+                    <td>28</td>
+                    <td>İzmir</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 3. Görseller (Images) -->
+        <h3 class="mt-4">Görseller</h3>
+        <img src="https://via.placeholder.com/300" class="img-fluid rounded border" alt="Örnek Resim">
+
+        <!-- 4. Butonlar (Buttons) -->
+        <h3 class="mt-4">Butonlar</h3>
+        <button class="btn btn-primary">Birincil Buton</button>
+        <button class="btn btn-secondary">İkincil Buton</button>
+        <button class="btn btn-success">Başarı Butonu</button>
+        <button class="btn btn-danger">Hata Butonu</button>
+
+        <!-- 5. Uyarılar (Alerts) -->
+        <h3 class="mt-4">Uyarılar (Alerts)</h3>
+        <div class="alert alert-warning">Bu bir uyarı mesajıdır!</div>
+        <div class="alert alert-success">Başarıyla giriş yaptınız!</div>
+
+        <!-- 6. Rozetler (Badges) -->
+        <h3 class="mt-4">Rozetler (Badges)</h3>
+        <h4>Bildirimler <span class="badge bg-danger">5</span></h4>
+        <button class="btn btn-primary">
+            Mesajlar <span class="badge bg-light text-dark">3</span>
+        </button>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+📌 Kod Açıklamaları
+✅ Typography (Yazı Stilleri)
+
+.lead → Vurgulanmış büyük paragraf oluşturur.
+.text-muted → Soluk renkli metin yapar.
+
+✅ Tablolar (Tables)
+
+.table → Temel tablo stilini ekler.
+.table-striped → Satırları dönüşümlü olarak renklendirir.
+.table-bordered → Hücrelere kenarlık ekler.
+.table-dark → Başlığı koyu yapar.
+
+✅ Görseller (Images)
+
+.img-fluid → Görseli responsive yapar.
+.rounded → Görseli köşeleri yuvarlak hale getirir.
+
+✅ Butonlar (Buttons)
+
+.btn → Bootstrap butonlarını oluşturur.
+.btn-primary, .btn-danger, .btn-success gibi sınıflar buton renklerini belirler.
+
+✅ Uyarılar (Alerts)
+
+.alert → Uyarı kutusu oluşturur.
+.alert-warning, .alert-success gibi sınıflar farklı türlerde uyarılar oluşturur.
+
+✅ Rozetler (Badges)
+
+.badge → Küçük etiketler ekler.
+.bg-danger, .bg-light gibi sınıflar rozet rengini belirler.

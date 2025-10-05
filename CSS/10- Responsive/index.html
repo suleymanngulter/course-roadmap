@@ -1,0 +1,42 @@
+<!-- 10. Konu: Responsive Tasarım ve Media Queries -->
+<!-- Bu dosya, Responsive (duyarlı) tasarımın nasıl yapıldığını en basit haliyle açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarım ve Media Queries</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Temel Responsive Tasarım */
+        .container {
+            width: 80%; /* İçeriğin genişliğini ayarlar */
+            margin: 0 auto; /* Ortalar */
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Küçük ekranlar için değişiklikler */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%; /* Küçük ekranlarda genişliği tamamen kaplar */
+                background-color: lightblue; /* Arka plan rengini değiştirir */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Tasarım ve Media Queries</h1>
+    
+    <h2>Responsive Tasarım Nedir?</h2>
+    <p>Responsive tasarım, web sitelerinin farklı ekran boyutlarına uyum sağlamasını sağlar.</p>
+
+    <h2>Örnek Uygulama</h2>
+    <div class="container">Bu bir responsive kutudur.</div>
+</body>
+</html>

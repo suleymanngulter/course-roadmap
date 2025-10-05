@@ -1,0 +1,65 @@
+<!-- 8. Konu: Grid Layout ile Sayfa Tasarımı -->
+<!-- Bu dosya, CSS Grid Layout modelini en basit haliyle açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Grid Konteyner - Öğeleri bir tablo gibi hizalar */
+        .grid-container {
+            display: grid; /* Izgara düzenini aktif eder */
+            grid-template-columns: repeat(3, 1fr); /* 3 sütun oluşturur, her biri eşit genişliktedir */
+            gap: 10px; /* Öğeler arasında boşluk bırakır */
+            background-color: lightgray;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        /* Grid Öğeleri - Izgara içindeki kutular */
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid blue;
+        }
+
+        /* 2 Sütunlu Izgara */
+        .grid-container.column {
+            grid-template-columns: repeat(2, 1fr); /* 2 sütun oluşturur */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Layout</h1>
+    
+    <h2>Grid Nedir?</h2>
+    <p>Grid, sayfa düzeni oluşturmak için kullanılan bir sistemdir. Öğeleri satır ve sütunlara yerleştirir.</p>
+
+    <h2>3 Sütunlu Grid</h2>
+    <p>Aşağıda 3 sütunlu bir ızgara örneği var.</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <h2>2 Sütunlu Grid</h2>
+    <p>Aşağıda 2 sütunlu bir ızgara örneği var.</p>
+    <div class="grid-container column">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+    </div>
+</body>
+</html>

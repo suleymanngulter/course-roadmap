@@ -1,0 +1,63 @@
+<!-- 7. Konu: Flexbox ile Modern Düzenleme -->
+<!-- Bu dosya, CSS Flexbox modelini basit bir şekilde açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Flex Container - Öğeleri hizalamak için kullanılır */
+        .flex-container {
+            display: flex; /* Öğeleri yatay veya dikey sıralamak için kullanılır */
+            justify-content: space-around; /* Öğeleri yatay eksende eşit şekilde dağıtır */
+            align-items: center; /* Öğeleri dikey eksende ortalar */
+            background-color: lightgray;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        /* Flex Items - İçerideki öğeler */
+        .flex-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            flex: 1; /* Tüm öğelerin eşit genişlikte olmasını sağlar */
+            margin: 5px;
+            border: 1px solid blue;
+        }
+
+        /* Dikey Sıralama */
+        .column {
+            flex-direction: column; /* Öğeleri alt alta dizer */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox</h1>
+    
+    <h2>Flexbox Nedir?</h2>
+    <p>Flexbox, öğeleri kolayca hizalamak ve düzenlemek için kullanılır.</p>
+
+    <h2>Yatay Sıralama</h2>
+    <p>Bu örnek, öğelerin yatay olarak hizalandığını gösterir.</p>
+    <div class="flex-container">
+        <div class="flex-item">Öğe 1</div>
+        <div class="flex-item">Öğe 2</div>
+        <div class="flex-item">Öğe 3</div>
+    </div>
+
+    <h2>Dikey Sıralama</h2>
+    <p>Bu örnek, öğelerin dikey olarak hizalandığını gösterir.</p>
+    <div class="flex-container column">
+        <div class="flex-item">Öğe A</div>
+        <div class="flex-item">Öğe B</div>
+        <div class="flex-item">Öğe C</div>
+    </div>
+</body>
+</html>

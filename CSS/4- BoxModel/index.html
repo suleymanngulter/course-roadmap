@@ -1,0 +1,44 @@
+<!-- 4. Konu: Box Model (Kutu Modeli) -->
+<!-- Bu dosya, CSS kutu modelini açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Kutu Modeli */
+        .kutu {
+            width: 300px; /* Kutu genişliğini belirler */
+            height: 200px; /* Kutu yüksekliğini belirler */
+            background-color: lightblue; /* Kutu arka plan rengini belirler */
+            border: 5px solid darkblue; /* Kutu kenarlığını belirler (kalınlık, stil, renk) */
+            padding: 20px; /* Kutu iç boşluklarını belirler */
+            margin: 20px auto; /* Kutu dış boşluklarını belirler ve ortalar */
+            text-align: center; /* İçindeki metni ortalar */
+            box-sizing: border-box; /* Padding ve border dahil olmak üzere genişlik ve yüksekliği belirler. */
+        }
+
+        .icerik {
+            background-color: white; /* İç bölgenin rengini belirler */
+            padding: 10px; /* İç bölge iç boşluğunu belirler */
+            border: 2px dashed gray; /* İç bölge kenarlığını belirler */
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model (Kutu Modeli)</h1>
+    
+    <h2>Kutu Modeli Nedir?</h2>
+    <p>Her HTML elementi bir kutu olarak düşünülebilir. Bu model, içerik, padding, border ve margin alanlarını içerir.</p>
+
+    <div class="kutu">
+        <div class="icerik">Bu bir kutu model örneğidir.</div>
+    </div>
+</body>
+</html>

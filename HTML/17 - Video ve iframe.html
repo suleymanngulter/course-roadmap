@@ -1,0 +1,34 @@
+HTML'de Video ve iFrame Kullanımı
+1. <video> Etiketi (Video Ekleme)
+Ne İşe Yarar?
+Web sayfasına bir video yerleştirmek için kullanılır.
+Temel Kullanımı:
+
+<video width="640" height="360" controls>
+  <source src="video.mp4" type="video/mp4">
+  Tarayıcınız bu videoyu desteklemiyor.
+</video>
+Açıklamalar:
+width ve height: Videonun boyutlarını ayarlar.
+controls: Oynatma, duraklatma ve ses ayarları için kontrol çubuğu ekler.
+<source>: Videonun dosya yolunu ve türünü belirler.
+Tarayıcı Uyumlu Mesaj: Eğer tarayıcı videoyu desteklemezse kullanıcıya gösterilir.
+
+
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+src: Gömülecek web sayfasının adresi.
+width ve height: Çerçevenin genişliği ve yüksekliği.
+YouTube Videosu Gömmek:
+YouTube videolarını sitenize eklemek için <iframe> kullanılır.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+frameborder: Çerçeve kenarlığını ayarlar (0 yaparsanız kenarlık olmaz).
+allowfullscreen: Videoyu tam ekran oynatmayı sağlar.
+
+Google Haritalar Ekleme:
+Google Maps embed kodunu kullanarak harita ekleyebilirsiniz.
+
+<iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<video>	Sayfaya bir video ekler.
+<iframe>Harita, video veya başka bir web sayfasını gömer.

@@ -1,0 +1,56 @@
+<!-- 2. Konu: CSS Seçiciler -->
+<!-- Bu dosya, CSS seçicilerini açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Seçiciler</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Evrensel Seçici */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Element Seçici */
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* ID Seçici */
+        #ozel-baslik {
+            color: red;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* Class Seçici */
+        .vurgulu {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Seçiciler</h1>
+    
+    <h2>Evrensel, Element, ID ve Class Seçicileri</h2>
+    <p>CSS'de farklı seçiciler kullanarak HTML elementlerini biçimlendirebiliriz.</p>
+
+    <h3 id="ozel-baslik">Bu bir ID seçici örneğidir.</h3>
+    <p class="vurgulu">Bu bir class seçici örneğidir.</p>
+
+    <ul>
+        <li class="vurgulu">Liste öğesi 1</li>
+        <li>Liste öğesi 2</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+HTML Formlar 
+Formlar, kullanıcıdan bilgi almak için kullanılır. Form içine metin kutusu, buton, onay kutusu gibi elemanlar eklenir.
+
+1. Temel Form Örneği
+
+<form action="bilgilerin gidecegi yer" method="post">
+  <label>Adınız:</label>
+  <input type="text" name="ad">
+  <br><br>
+  
+  <input type="submit" value="Gönder">
+</form>
+Ne Yapar?
+
+Adınızı girersiniz, "Gönder" butonuna basınca bilgiler "Action'a yazılan yere" gider.
+
+2. Form Elemanları
+Eleman	Ne İşe Yarar?
+<input type="text">	Metin kutusu	Adınızı girin
+<input type="password">	Şifre kutusu	●●●●●●
+<input type="email">	E-posta kutusu	abc@mail.com
+<input type="checkbox">	Onay kutusu	✅ Şartları kabul ediyorum
+<input type="radio">	Tek seçenek	⚪ Erkek ⚪ Kadın
+<input type="number">	Sayı girişi	25
+<input type="date">	Tarih seçici	📅 2024-02-09
+<textarea>	Uzun metin kutusu	Mesajınızı yazın...
+<select>	Açılır liste	İstanbul, Ankara...
+<button>	Gönder

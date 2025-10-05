@@ -1,0 +1,46 @@
+<a> Etiketi (Anchor/Link)
+    HTML'de <a> etiketi, web sayfaları arasında bağlantı (link) oluşturmak için kullanılır. 
+    Kullanıcı bu bağlantıya tıkladığında, belirtilen URL'ye yönlendirilir.
+    
+    <a> Etiketinin Temel Kullanımı
+
+    <a href="https://www.yasinozdemir.com">Buraya Tıkla</a>
+    href (Hypertext Reference): Bağlantının hedef adresini belirler.
+    Görünecek Metin: Kullanıcıya gösterilen tıklanabilir metindir. Yukarıdaki örnekte: "Buraya Tıkla".
+    <a> Etiketi Özellikleri
+
+    1. Yeni Sekmede Açma
+    Kullanıcıyı farklı bir sekmede yönlendirmek için target="_blank" özelliği kullanılır:
+
+    <a href="https://www.yasinozdemir.com" target="_blank">Yeni Sekmede Aç</a>
+
+    2. Sayfa İçi Linkler
+    Aynı sayfa içinde bir bölüme yönlendirme yapmak için id kullanılır:
+
+    <!-- Link -->
+    <a href="#bolum1">Bölüm 1'e Git</a>
+    
+    <!-- Hedef Bölüm -->
+    <h2 id="bolum1">Bölüm 1</h2>
+    
+    3. Telefon Numarası Bağlantısı
+    Telefon numaralarını tıklanabilir yapmak için tel: kullanılır:
+
+    <a href="tel:+901234567890">Bizi Arayın</a>
+
+    4. E-posta Bağlantısı
+    E-posta göndermek için mailto: kullanılır:
+
+    <a href="mailto:info@yasinozdemir.com">E-posta Gönder</a>
+
+    5. Boş href (Tıklanabilir fakat Yönlendirmesiz)
+    Bağlantı bir işlev olmadan sadece görsel olarak gösterilmek isteniyorsa:
+ 
+    <a href="#">Tıklanabilir Ama Yönlendirme Yok</a>
+    Özet
+    <a> etiketi, HTML'deki bağlantı oluşturma temelidir. Kullanım alanları:
+    
+    Web sayfalarına bağlantı verme.
+    Sayfa içi gezinme.
+    Telefon ve e-posta bağlantıları oluşturma.
+    Her zaman kullanıcı deneyimi ve SEO uyumluluğu için anlamlı metinler kullanmaya özen gösterin.

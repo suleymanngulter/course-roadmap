@@ -1,0 +1,61 @@
+<!-- 3. Konu: CSS Özellikleri ve Kullanımı -->
+<!-- Bu dosya, CSS özelliklerini açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Özellikleri</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+        /* Renk ve Arka Plan Özellikleri */
+        body {
+            background-color: #f4f4f4; /* Sayfa arka plan rengini belirler */
+            color: #333; /* Sayfa genelindeki metin rengini belirler */
+            font-family: Arial, sans-serif; /* Sayfa yazı tipini belirler */
+            margin: 20px; /* Sayfa dış boşluklarını belirler */
+            padding: 20px; /* Sayfa iç boşluklarını belirler */
+            
+        }
+
+        /* Yazı Stilleri */
+        h2 {
+            color: blue; /* Başlık rengini mavi yapar */
+            text-align: center; /* Başlığı ortalar */
+            text-transform: uppercase; /* Başlık metnini büyük harfe çevirir */
+        }
+
+        p {
+            font-size: 18px; /* Paragraf yazı boyutunu belirler */
+            line-height: 1.6; /* Satır aralığını artırır, daha okunabilir yapar */
+            text-align: justify; /* Metni iki yana yaslar */
+        }
+
+        /* Kenar Boşlukları ve Çerçeveler */
+        .kutu {
+            width: 300px; /* Kutu genişliğini belirler */
+            height: 200px; /* Kutu yüksekliğini belirler */
+            background-color: lightblue; /* Kutu arka plan rengini belirler */
+            border: 2px solid darkblue; /* Kutu kenarlığını belirler (kalınlık, stil, renk) */
+            padding: 20px; /* Kutu iç boşluklarını belirler */
+            margin: 20px auto; /* Kutu dış boşluklarını belirler ve ortalar */
+            text-align: center; /* İçindeki metni ortalar */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Özellikleri</h1>
+    
+    <h2>Renk ve Yazı Stilleri</h2>
+    <p>CSS, metinlerin rengini, boyutunu ve hizalamasını değiştirmek için kullanılır.</p>
+
+    <h2>Kutu Modeli</h2>
+    <p>Kutu modeli, HTML elementlerinin kenar boşlukları ve iç boşluklarını yönetir.</p>
+
+    <div class="kutu">Bu bir CSS kutu modelidir.</div>
+</body>
+</html>

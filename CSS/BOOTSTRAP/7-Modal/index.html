@@ -1,0 +1,107 @@
+📌 Konu 7: Bootstrap Modal, Tooltip ve Popover Kullanımı
+Bu derste, Bootstrap'in Modal (Açılır Pencere), Tooltip (İpucu Metni) ve Popover (Etkileşimli Açıklama Kutusu) bileşenlerini öğreneceğiz.
+Bu bileşenler, kullanıcıya daha fazla bilgi vermek veya etkileşim sağlamak için oldukça kullanışlıdır.
+
+🎯 Bootstrap Dinamik Bileşenleri
+Modal (Açılır Pencere)
+Tooltip (İpucu Metni)
+Popover (Açılır Açıklama Kutusu)
+
+📌 Örnek HTML Kodu: Bootstrap Modal, Tooltip ve Popover
+Aşağıdaki kod, bu bileşenleri içeren bir sayfa oluşturur.
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Modal, Tooltip ve Popover</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h2 class="text-primary text-center">Bootstrap Modal, Tooltip ve Popover</h2>
+
+        <!-- 1. Modal Butonu -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ornekModal">
+            Modal Aç
+        </button>
+
+        <!-- 1. Modal İçeriği -->
+        <div class="modal fade" id="ornekModal" tabindex="-1" aria-labelledby="modalBaslik" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBaslik">Örnek Modal Başlığı</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bu, Bootstrap modal bileşeninin içeriğidir.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Tooltip Kullanımı -->
+        <h3 class="mt-4">Tooltip (İpucu Metni)</h3>
+        <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Bu bir ipucu metnidir!">
+            Tooltip ile Üzerine Gelin
+        </button>
+
+        <!-- 3. Popover Kullanımı -->
+        <h3 class="mt-4">Popover (Açılır Açıklama Kutusu)</h3>
+        <button type="button" class="btn btn-info" data-bs-toggle="popover" title="Popover Başlığı" data-bs-content="Bu, popover bileşenine ait bir açıklama metnidir.">
+            Popover Aç
+        </button>
+
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tooltip ve Popover'u Etkinleştirme -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            popoverTriggerList.forEach(function (popoverTriggerEl) {
+                new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+🔍 Kod Açıklamaları
+✅ Modal (Açılır Pencere)
+
+.modal → Modal penceresini oluşturur.
+.modal-dialog → Modalın içeriğini belirler.
+.modal-header, .modal-body, .modal-footer → Modal bileşenlerini düzenler.
+.btn-close → Kapatma butonu ekler.
+data-bs-toggle="modal" ve data-bs-target="#ornekModal" → Modalı açan butonun modalı hedeflemesini sağlar.
+✅ Tooltip (İpucu Metni)
+
+data-bs-toggle="tooltip" → Tooltip özelliğini etkinleştirir.
+data-bs-placement="top" → Tooltip'in konumunu belirler.
+title="Bu bir ipucu metnidir!" → Tooltip içeriğini tanımlar.
+JavaScript kodu ile tooltip özelliği sayfa açıldığında etkinleştirilir.
+✅ Popover (Açılır Açıklama Kutusu)
+
+data-bs-toggle="popover" → Popover özelliğini etkinleştirir.
+title="Popover Başlığı" → Popover başlığını belirler.
+data-bs-content="Açıklama metni" → Popover içeriğini tanımlar.
+JavaScript kodu ile popover özelliği sayfa açıldığında etkinleştirilir.

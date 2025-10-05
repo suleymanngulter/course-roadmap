@@ -1,0 +1,57 @@
+Konu: Bootstrap'e Giriş ve Kurulum
+1. Bootstrap Nedir?
+Bootstrap, duyarlı (responsive) ve mobil uyumlu web siteleri oluşturmayı kolaylaştıran bir CSS ve JavaScript kütüphanesidir. İçerisinde hazır stiller, bileşenler ve bir grid (ızgara) sistemi bulunur.
+
+2. Bootstrap Nasıl Kullanılır?
+Bootstrap'i kullanmak için iki yöntem vardır:
+
+CDN (İnternet Üzerinden Kullanım)
+Yerel (Dosya Olarak İndirme ve Kullanma)
+Biz şimdilik en kolay yöntem olan CDN ile kullanacağız.
+
+Örnek HTML Kodu: Bootstrap ile İlk Sayfamız
+Bu kodu .html uzantılı bir dosya olarak kaydedip Visual Studio Code ile açabilirsin. Tarayıcıda çalıştırdığında Bootstrap’in temel bileşenlerini kullanarak stilin değiştiğini göreceksin.
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap'e Giriş</title>
+    <!-- Bootstrap CSS Kütüphanesi (CDN ile) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar (Üst Menü) -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Benim İlk Bootstrap Sayfam</a>
+        </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+    <div class="container mt-4">
+        <h1 class="text-primary">Merhaba, Bootstrap!</h1>
+        <p class="lead">Bu, Bootstrap kullanarak oluşturduğumuz ilk sayfa.</p>
+
+        <!-- Düğme (Button) -->
+        <button class="btn btn-success">Tıklayın!</button>
+
+        <!-- Satır ve Sütun Yapısı (Grid Sistemi) -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="p-3 bg-light border">Bu bir sütun.</div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 bg-light border">Bu da başka bir sütun.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Kütüphaneleri (Bazı bileşenler için gerekli) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

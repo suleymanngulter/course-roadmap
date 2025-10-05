@@ -1,0 +1,83 @@
+<!-- 5. Konu: Pozisyonlandırma (Positioning) -->
+<!-- Bu dosya, CSS pozisyonlandırma yöntemlerini açıklayan temel bir örnektir. -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pozisyonlandırma</title>
+    
+    <!-- External CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS Yöntemi (Örnek) -->
+    <style>
+       
+        /* Static (Varsayılan) Pozisyon */
+        .static {
+            position: static; /* Öğeler varsayılan olarak static pozisyondadır, herhangi bir özel konumlandırma yapılmaz. */
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Relative Pozisyon */
+        .relative {
+            position: relative; /* Öğeyi normal konumuna göre hareket ettirir, ancak bulunduğu alanda yer kaplamaya devam eder. */
+            left: 20px; /* Öğeyi sol tarafa 20 piksel kaydırır. */
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Absolute Pozisyon */
+        .absolute {
+            position: absolute; /* Öğeyi en yakın pozisyonlu üst öğeye veya doğrudan sayfanın köşesine göre konumlandırır. */
+            top: 50px; /* Sayfanın üstünden 50 piksel aşağıda başlar. */
+            left: 50px; /* Sayfanın solundan 50 piksel uzaklıkta başlar. */
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        /* Fixed Pozisyon */
+        .fixed {
+            position: fixed; /* Sayfa kaydırılsa bile sabit bir konumda kalır. */
+            bottom: 10px; /* Sayfanın en altından 10 piksel yukarıda kalır. */
+            right: 10px; /* Sayfanın sağ kenarından 10 piksel uzaklıkta durur. */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Sticky Pozisyon */
+        .sticky {
+            position: sticky; /* Öğeyi sayfa kaydırıldığında belirli bir noktaya geldiğinde sabitleyen bir pozisyon türüdür. */
+            top: 0px; /* Sayfanın en üstüne ulaştığında sabitlenir. */
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pozisyonlandırma</h1>
+    
+    <h2>Statik Pozisyon</h2>
+    <p>Bu öğe, varsayılan olarak bulunduğu yerde kalır ve diğer öğeler tarafından etkilenmez.</p>
+    <div class="static">Bu bir statik pozisyonlu öğedir.</div>
+
+    <h2>Relative Pozisyon</h2>
+    <p>Bu öğe, normal konumuna göre kaydırılabilir ancak diğer öğelerin düzenini bozmaz.</p>
+    <div class="relative">Bu bir relative (göreceli) pozisyonlu öğedir.</div>
+
+    <h2>Absolute Pozisyon</h2>
+    <p>Bu öğe, en yakın konumlandırılmış üst öğeye göre hareket eder veya sayfanın sol üst köşesine göre yerleşir.</p>
+    <div class="absolute">Bu bir absolute (kesin) pozisyonlu öğedir.</div>
+
+    <h2>Fixed Pozisyon</h2>
+    <p>Bu öğe, sayfa kaydırılsa bile sabit kalır ve her zaman belirli bir yerde görünür.</p>
+    <div class="fixed">Bu bir fixed (sabit) pozisyonlu öğedir.</div>
+
+    <h2>Sticky Pozisyon</h2>
+    <p>Bu öğe, kaydırıldığında belirli bir noktaya geldiğinde sayfanın üst kısmına yapışır.</p>
+    <div class="sticky">Bu bir sticky (yapışkan) pozisyonlu öğedir.</div>
+</body>
+</html>
