@@ -16,9 +16,9 @@
 // let rastgeleSayi = Math.floor(Math.random() * (max - min + 1)) + min;
 // console.log(rastgeleSayi); // Örneğin: 7
 
-let min = 1;
-let max =10;
-let r
+// let min = 1;
+// let max =10;
+// let r
 
 // let dizi = ['elma', 'armut', 'muz', 'çilek'];
 // let rasgeleIndeks = Math.floor(Math.random() * dizi.length);
