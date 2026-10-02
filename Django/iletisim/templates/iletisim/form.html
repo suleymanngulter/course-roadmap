@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}İletişim{% endblock %}
+
+{% block icerik %}
+  <h1>Bize yaz</h1>
+  <p>Form gönderilince veri <code>Mesaj</code> tablosuna kaydolur. Admin'den okuyabilirsin.</p>
+
+  <div class="kutu">
+    <form method="post">
+      {# csrf_token: başka siteden sahte form gönderilmesin #}
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+{% endblock %}

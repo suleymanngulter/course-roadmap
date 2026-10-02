@@ -1,0 +1,20 @@
+{# extends: ortak iskelet base.html. Bu dosya sadece içeriği yazar. #}
+{% extends "base.html" %}
+
+{% block title %}{{ baslik }}{% endblock %}
+
+{% block icerik %}
+  <h1>{{ baslik }}</h1>
+  <p>{{ ozet }}</p>
+
+  {# for: view'daki kartlar listesini tek tek basar #}
+  {% for kart in kartlar %}
+    <div class="kutu">
+      <h2>{{ kart.baslik }}</h2>
+      <p>{{ kart.yazi }}</p>
+      <p><a href="{{ kart.adres }}">Aç</a></p>
+    </div>
+  {% endfor %}
+
+  <p>İstek yolu: tarayıcı → <code>urls.py</code> → <code>views.py</code> → HTML.</p>
+{% endblock %}

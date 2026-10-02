@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ urun.ad }}{% endblock %}
+
+{% block icerik %}
+  <h1>{{ urun.ad }}</h1>
+  <div class="kutu">
+    <p><strong>Fiyat:</strong> {{ urun.fiyat }} ₺</p>
+    <p><strong>Açıklama:</strong> {{ urun.aciklama|default:"Yok." }}</p>
+    <p><strong>Kayıt:</strong> {{ urun.olusturulma }}</p>
+  </div>
+  <p><a href="{% url 'urunler:liste' %}">Listeye dön</a></p>
+{% endblock %}

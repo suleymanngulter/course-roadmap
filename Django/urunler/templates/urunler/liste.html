@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Ürünler{% endblock %}
+
+{% block icerik %}
+  <h1>Ürünler</h1>
+  <p>Bu liste <code>Urun</code> modelinden gelir. Tıklayınca detay açılır.</p>
+
+  {% for urun in urunler %}
+    <div class="kutu">
+      <h2>{{ urun.ad }}</h2>
+      <p>{{ urun.fiyat }} ₺</p>
+      {# truncatewords: uzun metni kısaltır #}
+      <p>{{ urun.aciklama|truncatewords:12 }}</p>
+      <p><a href="{% url 'urunler:detay' urun.pk %}">Detay</a></p>
+    </div>
+  {% empty %}
+    <p>Ürün yok. Admin panelinden ekleyebilirsin.</p>
+  {% endfor %}
+{% endblock %}

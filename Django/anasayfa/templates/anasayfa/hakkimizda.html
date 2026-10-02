@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Hakkımızda{% endblock %}
+
+{% block icerik %}
+  <h1>Bu proje ne?</h1>
+  <p>
+    Başlangıç seviyesi bir Django sitesi.
+    Üç uygulama (modül) var: <code>anasayfa</code>, <code>urunler</code>, <code>iletisim</code>.
+  </p>
+
+  <h2>Sık gördüğün dosyalar</h2>
+  <ul>
+    {% for d in dosyalar %}
+      <li><code>{{ d.ad }}</code> — {{ d.ne }}</li>
+    {% endfor %}
+  </ul>
+
+  <p>
+    Anasayfa veritabanı kullanmaz.
+    Ürün ve mesaj için tablolar <code>urunler</code> ve <code>iletisim</code> içinde.
+  </p>
+{% endblock %}
